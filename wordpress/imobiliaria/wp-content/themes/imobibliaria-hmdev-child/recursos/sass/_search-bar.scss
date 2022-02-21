@@ -1,0 +1,39 @@
+@mixin search-bar($largura, $font-size, $larg-label,$bg-search:rgba(0, 0, 0, 0.7)){
+    #busca{
+        color: white;
+        #ctn-busca{
+            background-color: $bg-search;
+        }
+        select{
+            font-weight: bold;
+            font-size: $font-size - 0.2 !important;
+            color: black;
+            border: none;
+        }
+        select:focus{
+            box-shadow: none;
+        }
+        option{
+            font-size: $font-size - 0.2 !important;
+            background: $bg-search;
+
+        }
+        h5{
+            font-size: $font-size + .5 !important;
+        }
+        input, label, span{
+            font-size: $font-size - 0.2 !important;
+            font-weight: 600;
+        }
+        width: 100%;
+        max-width: #{$largura}px;
+        min-width: calc(#{$largura}px - 10%);
+        margin: 0 auto;
+        z-index: 5;
+        position: relative;
+    } 
+    #faixa label{
+        width: $larg-label
+    }
+
+}

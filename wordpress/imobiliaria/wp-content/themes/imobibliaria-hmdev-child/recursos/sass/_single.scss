@@ -1,0 +1,21 @@
+@mixin single($altura) {
+    $alturaMenu: calc($altura * 0.50) + 20;
+    #single{
+        height: auto;
+        max-height: 65vh;
+        padding: 30px 20px ;
+        background:white;
+        margin-top: #{$alturaMenu}px;
+        .singleImg{
+            margin-right: 3vw;
+            button::before{
+                color: black;
+            }
+        }
+        .col-12{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@import 'imgs-cards';
+@import 'menu-superior';
+@import 'parte1';
+@import 'search-bar';
+@import 'banner';
+@import 'destaques';
+@import 'single';
+@import 'resultado-busca';
+
+$tela:575;
+$size: 1rem;
+
+$telas: 576, 768, 992, 1200, 1400;
+$logo-ref-size: 100;
+@each $tela in $telas {
+    @media only screen and (min-height: 768px) {
+        #single{
+            margin-bottom: 5vh;
+            margin-top: #{calc($tela * 0.12)}px !important;
+        }
+        .custom-logo-link img{
+            height: 4.2vw !important;
+        }
+    }
+    @media only screen and (max-width: 575px) {
+        @include parte1(
+            $h1-size: #{calc($tela * 0.018)}px
+        );
+        @include menu-superior(
+            $altura: calc($tela * 0.09),
+            $margem-x: $size * 0.20,
+            $margem-y: 0,
+            $font-size: #{calc($tela * 0.0004)},
+
+        );
+        @include search-bar(
+            $largura: #{calc($tela * 0.7)}px,
+            $font-size: $size,
+            $larg-label: auto,
+        );        
+        @include destaques(
+            $alturaDestaque: 100vh,
+            $larguraDestaque: 100%,
+            $opct1: 1,
+            $opct2: 0.8,
+            $deg: 45,
+            $fsizeDestaque: 0.6rem,
+            $alturaRodape: 50px
+        );
+        @include bannerImages(
+            $alturaBanner: 100vh,
+            $larguraBanner: calc($tela *0.4)
+        );
+        @include single ($altura:calc($tela * 0.15));
+    }
+
+    @media only screen and (min-width: #{$tela}px) {
+        @include parte1(
+            $h1-size: $size + calc(($tela / 1000)*1.2)
+        );
+        @include menu-superior(
+            $altura: calc($tela * 0.15),
+            $margem-x: $size * 0.20,
+            $margem-y: 0,
+            $font-size: #{calc($tela * 0.0008)},
+
+        );
+        @include search-bar(
+            $largura: #{calc($tela * 1)},
+            $font-size: $size,
+            $larg-label: auto,
+        );        
+        @include bannerImages(
+            $alturaBanner: calc($tela),
+            $larguraBanner: calc($tela)
+        );
+        @include destaques(
+            $alturaDestaque: 100vh,
+            $larguraDestaque: 100%,
+            $opct1: .8,
+            $opct2: 0,
+            $deg: 90,
+            $alturaRodape: 100px
+        );
+        @include single($altura:calc($tela * 0.15));
+        @include resultadoBusca($alturaInicial:calc($tela * 0.10));
+    }
+}

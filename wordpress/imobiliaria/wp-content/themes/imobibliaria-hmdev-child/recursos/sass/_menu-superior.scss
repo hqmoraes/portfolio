@@ -1,0 +1,55 @@
+@mixin menu-superior($altura, $font-size: 1rem, $margem-y:0 , $margem-x: 0, $size-logo:5vw){
+    #menu-superior{
+        height: #{calc($altura * 0.50)}px;
+        background-color: rgb(124, 115, 115); 
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 10;
+        color: white;
+        font-weight: 100;
+        font-size: #{$font-size}rem;
+        p{
+            margin:auto !important;
+        }
+        .col-10 img, .col-11 img{
+            height: #{calc($altura * 0.1)}px !important;
+            min-height: 20px;
+            margin-right: 5px;
+        }
+        .col-1 img{
+            height: #{calc($altura * 0.20 )}px !important;
+            margin-right: 10px;
+        }
+        .col-2 img{
+            border-radius: 50px;
+            box-shadow: 1px 1px 5px black;
+            border: none;
+        }
+        #img-whats{
+            align-self: flex-start;
+        }
+        #img-whats img{
+            min-height: 15px;
+        }
+        .custom-logo-link img{
+            max-width: 100%;
+            width: $size-logo;
+            height: $size-logo;
+        }
+        .custom-logo-link{
+            display: flex;
+            align-items: center;
+            height: $altura;
+        }
+        button{
+            font-size: #{$font-size}rem;
+        }
+
+    }
+}
+
+
+
+
+
