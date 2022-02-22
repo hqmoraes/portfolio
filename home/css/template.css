@@ -44,14 +44,14 @@
   }
 
   #aws {
-    margin-bottom: 80%;
+    margin-bottom: 45%;
     border-radius: 10px 50px 50px 10px;
     padding-left: 5vw;
     left: 0;
   }
 
   #pureCode {
-    margin-bottom: 50%;
+    margin-bottom: 30%;
     right: 0;
     left: auto;
     text-align: right;
@@ -60,7 +60,7 @@
   }
 
   #wordPress {
-    margin-bottom: 20%;
+    margin-bottom: 15%;
     border-radius: 10px 50px 50px 10px;
     padding-left: 5vw;
     left: 0;
