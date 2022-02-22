@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@mixin home(
+    $tamanhoItens: 50px
+) {
+    .cores{
+        background: rgba(0, 79, 59, 0.7);
+        border-radius: 50px;
+        border: none;
+        box-shadow: 1px 1px 5px rgba(0, 79, 59, 0.7);
+    }
+    #contato{
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 0;
+        height: $tamanhoItens * 2 ;
+    }    
+    #itens{
+        width: $tamanhoItens;
+        height: $tamanhoItens;
+    }
+    #contato img{
+        width: $tamanhoItens +10;
+    }
+    #contato a{
+        text-decoration: none;
+    }
+    .escopo{
+        position:absolute;
+        bottom: $tamanhoItens;
+        width: 70%;
+    }
+    .exibirEscopo{
+        opacity: 1;
+        transition-duration: 1s;
+    }
+    .esconderEscopo{
+        opacity: 0;
+        transition-duration: 1s;
+    }
+
+
+    #aws{
+        margin-bottom: 80%;
+        border-radius: 10px 50px 50px 10px ;
+        padding-left: 5vw;
+        left: 0;
+    }
+    #pureCode{
+        margin-bottom: 50%;
+        right: 0;
+        left: auto;
+        text-align: right;
+        border-radius: 50px 10px 10px 50px ;
+        padding-right: 5vw;
+    }
+    #wordPress{
+        margin-bottom: 20%;
+        border-radius: 10px 50px 50px 10px ;
+        padding-left: 5vw;
+        left: 0;        
+    }
+    #titulo p{
+        text-align: right;
+        font-family: 'Dancing Script', cursive;
+        font-size: 2rem;
+        
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+@include home;
+}
