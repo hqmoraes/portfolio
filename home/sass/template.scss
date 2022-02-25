@@ -139,13 +139,13 @@ $tamanhoConteudo: 80%;
 @media only screen and (min-width: 200px) {
     main{
         max-height: 70vh;
-        background: yellow;
+        background: white;
     }
     @include home(   
         $tamanhoItens: 10vw,
         $font-s: 0.35
         );
-        $font-size: $tamanhoItens * $font-s * 2;
+        $font-size: $tamanhoItens * $font-s * 1.5;
         #titulo p{
             text-align: right;
             font-family: 'Dancing Script', cursive;

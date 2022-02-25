@@ -3,7 +3,7 @@
 @media only screen and (min-width: 200px) {
   main {
     max-height: 70vh;
-    background: yellow;
+    background: white;
   }
 
   .esconderConteudo {
@@ -145,11 +145,11 @@
   #titulo p {
     text-align: right;
     font-family: "Dancing Script", cursive;
-    font-size: 7vw;
+    font-size: 5.25vw;
   }
 
   #titulo h1 {
-    font-size: 14vw;
+    font-size: 10.5vw;
     text-align: right;
   }
 }
