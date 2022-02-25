@@ -12,6 +12,7 @@
                                     É o modelo sugerido para sites estáticos, ou aplicativos com grandes camadas exclusivas, que encapsulem regras de negócio
                                     complexas e restritas. Sites e aplicações construídos através de Pure Code tendem a ser mais caros, levam mais tempo para
                                     serem desenvolvidos e permitem um nível de customização praticamente infinito.
+                                    Também se encaixam aqui, as landing pages, cujo desenvolvimento é rápido e sem muita "firula".
                                     Tem uma demanda para esse modelo de desenvolvimento?
                                 </p>
                                 <p class="text-end"><strong><a href="https://wa.me/5519984323300">Vamos conversar!</a></strong></p>
