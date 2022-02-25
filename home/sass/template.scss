@@ -137,8 +137,10 @@ $tamanhoConteudo: 80%;
 
 
 @media only screen and (min-width: 200px) {
-
-    @include home(    
+    main{
+        max-height: 70vh;
+    }
+    @include home(   
         $tamanhoItens: 10vw,
         $font-s: 0.35
         );
