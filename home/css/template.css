@@ -6,6 +6,10 @@
     background: white;
   }
 
+  #home {
+    height: 100vh;
+  }
+
   .esconderConteudo {
     z-index: -10;
     opacity: 0;
@@ -123,14 +127,12 @@
     width: 100%;
     z-index: -1;
     background: white;
+    max-height: 70vh;
+    overflow-y: scroll;
   }
 
   .pgs p {
     font-size: 2.8vw;
-  }
-
-  body {
-    max-height: 100vh;
   }
 
   #pgAWS button, #pgPurecode button, #pgWordpress button {
@@ -154,6 +156,10 @@
   }
 }
 @media only screen and (min-width: 541px) {
+  #home {
+    height: 100vh;
+  }
+
   .esconderConteudo {
     z-index: -10;
     opacity: 0;
@@ -271,14 +277,12 @@
     width: 100%;
     z-index: -1;
     background: white;
+    max-height: 70vh;
+    overflow-y: scroll;
   }
 
   .pgs p {
     font-size: 3.84vw;
-  }
-
-  body {
-    max-height: 100vh;
   }
 
   #pgAWS button, #pgPurecode button, #pgWordpress button {
@@ -294,6 +298,10 @@
   body {
     max-width: 900px;
     margin: 0 auto;
+  }
+
+  #home {
+    height: 100vh;
   }
 
   .esconderConteudo {
@@ -413,14 +421,12 @@
     width: 100%;
     z-index: -1;
     background: white;
+    max-height: 70vh;
+    overflow-y: scroll;
   }
 
   .pgs p {
     font-size: 1.2vw;
-  }
-
-  body {
-    max-height: 100vh;
   }
 
   #pgAWS button, #pgPurecode button, #pgWordpress button {
