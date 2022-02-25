@@ -2,7 +2,6 @@ function exibirEscopo(){
     document.querySelectorAll('.escopo').forEach(escopo =>{
         escopo.classList.remove('esconderEscopo');
         escopo.classList.add('exibirEscopo');
-
     })
 }
 
@@ -48,6 +47,7 @@ function exibirConteudo(conteudo){
     Conteudo.classList.remove('esconderConteudo');
     Conteudo.classList.add('exibirConteudo');
     document.getElementById('itens').disabled = true;
+    document.getElementById('itens').zIndex = -10;
     document.querySelectorAll('.pgs button').forEach(b=>{
         b.disabled = false;
     });
@@ -61,6 +61,7 @@ function esconderConteudo(conteudo){
     esconderContato();
     esconderEscopo();
     document.getElementById('itens').disabled = false;
+    document.getElementById('itens').zIndex = 3;
     document.querySelectorAll('.pgs button').forEach(b=>{
         b.disabled = true;
     });
