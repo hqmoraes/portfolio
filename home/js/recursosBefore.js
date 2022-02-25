@@ -48,6 +48,9 @@ function exibirConteudo(conteudo){
     Conteudo.classList.remove('esconderConteudo');
     Conteudo.classList.add('exibirConteudo');
     document.getElementById('itens').disabled = true;
+    document.querySelectorAll('.pgs button').forEach(b=>{
+        b.disabled = false;
+    });
 }
 
 function esconderConteudo(conteudo){
@@ -58,4 +61,7 @@ function esconderConteudo(conteudo){
     esconderContato();
     esconderEscopo();
     document.getElementById('itens').disabled = false;
+    document.querySelectorAll('.pgs button').forEach(b=>{
+        b.disabled = true;
+    });
 }

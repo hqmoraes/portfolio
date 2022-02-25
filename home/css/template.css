@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 @media only screen and (min-width: 200px) {
   .esconderConteudo {
-    z-index: -1;
+    z-index: -10;
     opacity: 0;
     transition-duration: 1s;
   }
@@ -61,6 +61,7 @@
   .esconderEscopo {
     opacity: 0;
     transition-duration: 1s;
+    z-index: -10;
   }
 
   #AWS {
@@ -125,7 +126,6 @@
 
   body {
     max-height: 100vh;
-    overflow: scroll;
   }
 
   #pgAWS button, #pgPurecode button, #pgWordpress button {
@@ -139,7 +139,7 @@
 }
 @media only screen and (min-width: 541px) {
   .esconderConteudo {
-    z-index: -1;
+    z-index: -10;
     opacity: 0;
     transition-duration: 1s;
   }
@@ -198,6 +198,7 @@
   .esconderEscopo {
     opacity: 0;
     transition-duration: 1s;
+    z-index: -10;
   }
 
   #AWS {
@@ -262,7 +263,6 @@
 
   body {
     max-height: 100vh;
-    overflow: scroll;
   }
 
   #pgAWS button, #pgPurecode button, #pgWordpress button {
@@ -281,7 +281,7 @@
   }
 
   .esconderConteudo {
-    z-index: -1;
+    z-index: -10;
     opacity: 0;
     transition-duration: 1s;
   }
@@ -340,6 +340,7 @@
   .esconderEscopo {
     opacity: 0;
     transition-duration: 1s;
+    z-index: -10;
   }
 
   #AWS {
@@ -404,7 +405,6 @@
 
   body {
     max-height: 100vh;
-    overflow: scroll;
   }
 
   #pgAWS button, #pgPurecode button, #pgWordpress button {
