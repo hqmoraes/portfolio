@@ -28,7 +28,7 @@
   }
 
   #contato span {
-    font-size: 4.5vw;
+    font-size: 5.25vw;
   }
 
   #itens {
@@ -69,7 +69,7 @@
     border-radius: 0px 50px 50px 0px;
     padding-left: 5vw;
     left: 0;
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   #Purecode {
@@ -79,7 +79,7 @@
     text-align: right;
     border-radius: 50px 0px 0px 50px;
     padding-right: 5vw;
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   #Wordpress {
@@ -87,17 +87,17 @@
     border-radius: 0px 50px 50px 0px;
     padding-left: 5vw;
     left: 0;
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   #titulo p {
     text-align: right;
     font-family: "Dancing Script", cursive;
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   #titulo h1 {
-    font-size: 6vw;
+    font-size: 7vw;
     text-align: right;
   }
 
@@ -121,7 +121,7 @@
   }
 
   .pgs p {
-    font-size: 2.4vw;
+    font-size: 2.8vw;
   }
 
   body {
@@ -135,6 +135,17 @@
 
   #pgAWS button img, #pgPurecode button img, #pgWordpress button img {
     width: 2vw;
+  }
+
+  #titulo p {
+    text-align: right;
+    font-family: "Dancing Script", cursive;
+    font-size: 7vw;
+  }
+
+  #titulo h1 {
+    font-size: 14vw;
+    text-align: right;
   }
 }
 @media only screen and (min-width: 541px) {
