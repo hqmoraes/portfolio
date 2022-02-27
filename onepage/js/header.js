@@ -1,1 +1,1 @@
-var wsz = 20;
+var wsz = window.outerWidth;
