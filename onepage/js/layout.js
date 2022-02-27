@@ -56,5 +56,5 @@ paginasFim.forEach(p =>{
 
     $('#fim footer').append('<div>The first project</div>')
 
-    $('#home').css({'background-image': 'url(/img/bg/fundoParte1-20.jpg)'});
+    $('#home').css(`{background-image: url(/img/bg/fundoParte1-${wsz}.jpg)}`);
     console.log(wsz);
