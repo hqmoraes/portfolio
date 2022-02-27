@@ -55,3 +55,5 @@ paginasFim.forEach(p =>{
     }) })
 
     $('#fim footer').append('<div>The first project</div>')
+
+    console.log(wsz);
