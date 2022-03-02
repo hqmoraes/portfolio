@@ -11,3 +11,8 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  storefrontchild
 */
+
+.wtp{
+    width: 3vw;
+    height: 3vw;
+}
