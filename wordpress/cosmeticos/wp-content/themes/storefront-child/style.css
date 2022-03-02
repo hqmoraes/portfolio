@@ -15,7 +15,7 @@
 .wtp{
     width: 5vw;
     height: 5vw;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
 }
