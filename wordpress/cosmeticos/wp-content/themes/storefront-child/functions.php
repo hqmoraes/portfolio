@@ -11,7 +11,9 @@ function my_theme_enqueue_styles() {
         array( $parenthandle ),
         $theme->get('Version') 
     );
-    wp_enqueue_script('recursos', get_stylesheet_directory_uri().'/js/recursos.js', array('jquery','',true));
+    wp_enqueue_script('recursos', get_stylesheet_directory_uri() .'/js/recursos.js', array('jquery','',true));
 }
 
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+
+teste
